@@ -1,0 +1,689 @@
+/*common*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PT Serif Caption";
+}
+
+#wrapper {
+    width: 100%;
+    height: auto;
+    max-width: 1500px;
+    margin: auto;
+}
+
+section{
+    width: 95%;
+}
+
+h2, h3, h4{
+    text-align: center;
+    margin: 0.5em 2em 0.5em 3em;
+    padding-top: 10px;
+    font-family: "PT Serif Caption";
+}
+
+h5{
+    text-align: center;
+    margin: 2em 0em 1em 8em;
+    font-family: "PT Serif Caption";
+    color: #aa3009;
+    text-decoration: underline;
+}
+
+#work_space{
+    width: 100%;
+    height: auto;
+    margin-left: 46px;
+}
+
+#topic{
+    width: 98.5%;
+    height: 100px;
+    margin-top: -25px;
+    background-color: #ebebeb;
+    box-shadow: 0px 0px 5px black;
+}
+
+#topic h4{
+    text-decoration: underline;
+}
+
+#t_content, #t_work{
+    width: 98.5%;
+    height: auto;
+    margin-top: 2px;
+    overflow: hidden;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 0 0 10px 10px;
+    padding-left: 100px;
+}
+
+/*header.php*/
+header{
+    width: 100%;
+    height: auto;
+}
+
+#nav{
+    width: 100%;
+    height: 80px;
+    background: #aa3009;
+}
+
+#nav a{
+    color: white;
+    text-decoration: none;
+}
+
+#nav a:hover{
+    border-bottom: 1px dashed #ffffff;
+}
+
+#logo{
+    float: left;
+}
+
+#logo img{
+    width: 100%;
+    max-width: 300px;
+    margin: 8px 15px;
+}
+
+#language{
+    float: right;
+    margin-right: 230px;
+}
+
+#language a:hover{
+    border-bottom: 1px dashed #fff;
+}
+
+.language{
+    float: left;
+    margin: 5px 5px;
+    font: normal 12px "PT Serif Caption";
+}
+
+#top_user{
+    float: right;
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+#top_user a{
+    font: normal 16px "PT Serif Caption";
+}
+
+#top_user a:hover{
+    border-bottom: 1px dashed #fff;
+}
+
+/*nav.php*/
+#iitu{
+    width: 95%;
+    height: auto;
+    margin: 3em 5em;
+}
+
+#iitu a{
+    color: black;
+    text-decoration: none;
+    font: normal 20px "PT Serif Caption";
+    text-shadow: 1px 1px 2px white;
+}
+
+.navbar {
+    overflow: hidden;
+    width: 95%;
+    margin: 20px auto;
+    max-width: 1350px;
+    height: 55px;
+    background-color: #aa3009;
+    border-radius: 10px;
+    padding-left: 50px;
+}
+
+.dropdown {
+    width: 14%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 12px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px 16px 0px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar .dropdown:hover .dropbtn {
+    border-bottom: 1px dashed #fff;
+}
+
+.dropdown_content {
+    margin-top: 5px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown_content a {
+    font-size: 13px;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown_content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+
+/*footer.php*/
+footer{
+    width: 100%;
+    height: 80px;
+    position: relative;
+    top: 75px;
+    float: bottom;
+    clear: both;
+    background-color: #aa3009 !important;
+    color: #ffffff;
+    font: bold 14px sans-serif;
+}
+
+.footer_left{
+    width: 500px;
+    float: left;
+    margin: 30px 0px 0px 20px;
+}
+
+.footer_left p{
+    margin-bottom: 5px;
+}
+
+/*login.php*/
+.form{
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    padding: 15px 30px;
+    margin: 166px auto;
+    text-align: center;
+    background: #ebebeb;
+}
+
+.form h1{
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+    font-family: "PT Serif Caption";
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    border:1px solid #ccc;
+    border-radius: 2px;
+    padding-left: 10px;
+}
+button{
+    min-width: 100px;
+    padding:0 10px;
+    height: 40px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 2px;
+    background: #aa3009;
+    color:#fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*teachers.php*/
+.t_img{
+    width: 30%;
+    margin: 40px 20px 15px 15px;
+    float: left;
+}
+
+.t_img img{
+    width: 250px;
+    height: 250px;
+    margin-left: 15px;
+    border-radius: 50%;
+}
+
+.t_name{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+}
+
+.t_degree{
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 100px;
+    text-align: center;
+}
+
+/*work-list.php*/
+#t_work label{
+    font: bold 14px "PT Serif Caption";
+    color: #aa3009;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+#work_type{
+    width: 650px;
+    height: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font: bold 14px "PT Serif Caption";
+}
+
+#work_period{
+    width: 200px;
+    height: 40px;
+    font: bold 14px "PT Serif Caption";
+}
+
+#t_work_list{
+    width:98.5%;
+    border: 1px solid #9b9b9b;;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 2px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 0 0 10px 10px;
+}
+
+#t_work_list th, td{
+    border-bottom: 1px solid #9b9b9b;
+    padding: 10px 20px 5px 5px;
+}
+
+#t_work_list .fa{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+#t_work_list .fa-download{
+    color: cornflowerblue;
+}
+
+#t_work_list .fa-edit{
+    color: green;
+}
+
+#t_work_list .fa-times{
+    color: orangered;
+}
+
+/*statistic.php*/
+#t_content h5{
+    margin-left: -2em;
+}
+
+#t_statistics {
+    width:100%;
+    margin-left: -2em;
+    margin-bottom: 1em;
+    border: 1px solid #9b9b9b;
+    border-collapse: collapse;
+    border-radius: 1.5em;
+    overflow: hidden;
+}
+
+table#t_statistics td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #9b9b9b;
+    font-family: "PT Serif Caption";
+    font-size: 14px;
+}
+
+table#t_statistics a{
+    text-decoration: none;
+    color: black;
+    font-family: "PT Serif Caption";
+    font-size: 16px;
+}
+
+table#t_statistics .tr1 {
+    background-color: #c1c1c1;
+}
+
+table#t_statistics .tr2 {
+     background-color: #ededed;
+}
+
+table#t_statistics .tr2 td:nth-child(odd){
+    padding-left: 3em;
+}
+
+table#t_statistics .tr3 {
+    background-color: #fff;
+}
+
+table#t_statistics td:nth-child(even) {
+    width: 10%;
+    text-align: center;
+}
+
+/*profile.php*/
+#profile_image{
+    width: 30%;
+    margin: 40px 10px 40px 40px;
+    float: left;
+}
+
+#profile_image img{
+    width: 300px;
+    height: 300px;
+}
+
+#profile_info{
+    width: 50%;
+    margin: 65px 170px 40px 0px;
+    float: right;
+}
+
+#profile_info>p{
+    margin-top: 18px;
+    font: bold 18px "PT Serif Caption";
+    color: #aa3009;
+}
+
+#profile_info>p>a{
+    font: normal 18px "PT Serif Caption";
+    margin-left: 10px;
+    color: black;
+}
+#t_work{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#t_work h4{
+    text-align: left;
+    margin: 2em 0em 1em 1em;
+    color: #aa3009;
+    text-decoration: underline;
+}
+
+#t_work p{
+    font: bold 16px "PT Serif Caption";
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/*identity.php*/
+#left_box{
+    height: auto;
+    width: 17%;
+    background-color: #dcdcdc;
+    float: left;
+}
+.left_box_block{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 5px 5px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;;
+}
+
+.left_box_block a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+}
+
+.left_box_block:hover{
+    background-color: rgba(170, 48, 9, 0.72);
+}
+
+.left_box_block a:hover{
+    color: white;
+}
+
+#right_box{
+    width: 80%;
+    height: auto;
+    float: right;
+}
+
+#identify_image{
+    width: 30%;
+    margin: 30px 10px 100px 0px;
+    float: left;
+}
+
+#identify_image img{
+    width: 300px;
+    height: 300px;
+}
+
+#identify_info{
+    width: 50%;
+    margin: 25px 100px 40px 0px;
+    float: right;
+}
+
+#identify_info>p{
+    margin-top: 18px;
+    font: bold 18px "PT Serif Caption";
+    color: #aa3009;
+}
+
+#identify_info>p>a{
+    font: normal 18px "PT Serif Caption";
+    margin-left: 10px;
+    color: black;
+}
+
+#info_edit{
+    width: 290px;
+    height:40px;
+    float: left;
+    margin-left: 75px;
+    font: normal 14px "PT Serif Caption";
+}
+
+#info_edit a{
+    text-decoration: none;
+    color: white;
+}
+
+#info_edit a .fa-edit{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/*identity-edit.php*/
+#edit_info{
+    width: 75%;
+    margin: 25px 0px 20px 0px;
+    float: right;
+}
+
+#edit_info>form>p{
+    margin-top: 5px;
+    font: bold 18px "PT Serif Caption";
+    color: #aa3009;
+}
+
+#edit_info input, #edit_info select{
+    width: 70%;
+    height: 40px;
+    margin: 10px 0;
+    font: normal 18px "PT Serif Caption";
+    color: black;
+}
+
+#safe_edit{
+    width: 250px;
+    height:40px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 760px;
+    font: normal 14px "PT Serif Caption";
+}
+
+#safe_edit .fa-check{
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+#safe_edit a{
+    text-decoration: none;
+    color: white;
+}
+
+/*own-works.php, teachers-list.php*/
+#profile_works{
+    width: 82%;
+    float: right;
+    margin-bottom: 30px;
+}
+
+#profile_works_list, #teachers_list{
+    width: 99%;
+    margin-top: 15px;
+    border: 1px solid #9b9b9b;;
+    border-collapse: collapse;
+    text-align: left;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+}
+
+#profile_works_list th, #profile_works_list td{
+    border-bottom: 1px solid #9b9b9b;
+    padding: 10px 15px 5px 10px;
+}
+
+#profile_works_list th{
+    font-size: 10px;
+    color: #aa3009;
+    font-weight: bolder;
+}
+
+#profile_works_list td{
+    font-size: 12px;
+}
+
+#profile_works_list .fa, #teachers_list .fa{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-right: 2px;
+}
+
+#profile_works_list .fa-download{
+    color: cornflowerblue;
+}
+
+#profile_works_list .fa-edit, #teachers_list .fa-edit{
+    color: green;
+}
+
+#profile_works_list .fa-times, #teachers_list .fa-times{
+    color: orangered;
+}
+
+#profile_works_list .fa-plus, #teachers_list .fa-plus{
+    color: #aa3009;
+}
+
+
+#teachers_list{
+    width: 95% !important;
+    margin-left: 20px;
+}
+
+#teachers_list th{
+    font-size: 12px;
+    color: #aa3009;
+}
+
+#teachers_list td{
+    font-size: 14px;
+}
+
+#teachers_list td img{
+    width: 200px;
+    height: 200px;
+}
+
+#teachers_list th, #teachers_list td{
+    border-bottom: 1px solid #9b9b9b;
+    padding: 10px 15px 5px 10px;
+}
+
+
+
+@media screen and (max-width: 580px) {
+    #logo img{
+        width: 100%;
+        max-width: 200px;
+        margin: 15px 10px;
+    }
+
+    #language{
+        float: right;
+        margin: 5px 10px;
+    }
+
+    .language{
+        float: right;
+        margin: 5px 10px 0px 0px;
+        font: normal 12px "PT Serif";
+    }
+
+    #top_user{
+        float: right;
+        margin: 40px -60px 0px 0px;
+        font: normal 16px "PT Serif";
+    }
+}
+
+@media screen and (max-width: 770px) and (min-width: 580px){
+    /*.department{*/
+    /*    width: 11%;*/
+    /*    font: normal 12px "PT Serif";*/
+    /*    margin: 6px 7px;*/
+    /*}*/
+
+    /*#nav-menu nav{*/
+    /*    padding-left: 20px;*/
+    /*}*/
+}
